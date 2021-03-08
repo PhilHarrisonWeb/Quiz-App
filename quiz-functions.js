@@ -18,15 +18,16 @@ const answerDOM = (item) => {
     const container = document.createElement('div')
 
     // creation of checkbox
-    const checkbox = document.createElement('input')
-    checkbox.setAttribute('type', 'checkbox')
+    const radio = document.createElement('input')
+    radio.setAttribute('type', 'radio')
+    radio.setAttribute('name', 'answers')
 
     // creation of label
     const label = document.createElement('label')
-    label.htmlFor = checkbox
+    label.htmlFor = radio
     label.appendChild(document.createTextNode(`${item}`))
 
-    container.appendChild(checkbox)
+    container.appendChild(radio)
     container.appendChild(label)
 
     return container

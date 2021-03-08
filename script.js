@@ -33,8 +33,8 @@ const renderQuestions = (questions) => {
 
     questions[0].possible_answers.forEach((item) => {
         document.querySelector('#possible-answer-container').appendChild(answerDOM(item))
-    })
 
+    })
 }
 
 renderQuestions(questions)
